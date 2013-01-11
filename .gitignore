@@ -1,3 +1,6 @@
+# binary
+/dist
+
 # built application files
 *.apk
 *.ap_
@@ -11,6 +14,7 @@
 # generated files
 bin/
 gen/
+obj/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -18,3 +22,5 @@ local.properties
 # Eclipse project files
 #.classpath
 #.project
+
+/swig_on_android/libs/armeabi/*.so
