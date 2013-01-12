@@ -753,6 +753,40 @@ SWIGEXPORT jlong JNICALL Java_com_eric_swig_HarryJNI_byte_1array_1method(JNIEnv 
 }
 
 
+SWIGEXPORT jlong JNICALL Java_com_eric_swig_HarryJNI_void_1ptr_1method(JNIEnv *jenv, jclass jcls, void * jarg1) {
+  jlong jresult = 0 ;
+  void *arg1 = (void *) 0 ;
+  void *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  
+  arg1 = jarg1;
+  
+  result = (void *)void_ptr_method(arg1);
+  *(void **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_eric_swig_HarryJNI_byte_1array_1input_1method(JNIEnv *jenv, jclass jcls, jbyteArray jarg1) {
+  char *arg1 = (char *) 0 ;
+  int arg2 ;
+  
+  (void)jenv;
+  (void)jcls;
+  {
+    arg1 = (char *) jenv->GetByteArrayElements(jarg1, 0);
+    arg2 = (size_t) jenv->GetArrayLength(jarg1);
+  }
+  byte_array_input_method(arg1,arg2);
+  {
+    jenv->ReleaseByteArrayElements(jarg1, (jbyte *)arg1, 0);
+  }
+  
+}
+
+
 SWIGEXPORT jint JNICALL Java_com_eric_swig_HarryJNI_NET_1UDP_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   NetType result;

@@ -36,6 +36,8 @@ char* string_method(char *msg);
 signed char* byte_array_method(signed char arr[]);
 //void global_void_c_ref_method(int &value_i, char * value_str);
 //void *test_void_ptr(void *ptr);
+void * void_ptr_method(void * object); // Hope void * object --> Object in Java
+void byte_array_input_method(char *buf, int buf_len);
 
 typedef enum NetType {
     NET_UDP = 0,

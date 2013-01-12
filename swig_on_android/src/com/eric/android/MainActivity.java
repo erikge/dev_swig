@@ -38,6 +38,9 @@ public class MainActivity extends Activity {
 		Harry.init(new JavaCallback());
 		System.out.println(Harry.string_method("abc"));
 		Harry.void_method();
+		
+		byte[] array = new byte[] {1, 2, 3, 4};
+		Harry.byte_array_input_method(array);
 	}
 
 }

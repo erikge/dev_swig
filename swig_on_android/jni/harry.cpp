@@ -1,5 +1,6 @@
 #include "harry.h"
 
+#include <android/log.h>
 
 static CallbackStub *s_callback = NULL;
 
@@ -29,4 +30,12 @@ signed char* byte_array_method(signed char arr[]) {
     return NULL;
 }
 
-
+void * void_ptr_method(void * object) {
+    return NULL;
+}
+void byte_array_input_method(char *buf, int buf_len){
+    __android_log_print( ANDROID_LOG_DEBUG, "erik", "~~~~~~~~ buf_len(%d)", buf_len);
+    for(int i = 0; i < buf_len; ++i) {
+        __android_log_print( ANDROID_LOG_DEBUG, "erik", "~~~~~~~~ buf[%d] = %d", i, buf[i]);
+    }
+}

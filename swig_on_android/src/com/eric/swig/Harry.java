@@ -26,4 +26,13 @@ public class Harry {
     return (cPtr == 0) ? null : new SWIGTYPE_p_signed_char(cPtr, false);
   }
 
+  public static SWIGTYPE_p_void void_ptr_method(Object object) {
+    long cPtr = HarryJNI.void_ptr_method(object);
+    return (cPtr == 0) ? null : new SWIGTYPE_p_void(cPtr, false);
+  }
+
+  public static void byte_array_input_method(byte[] buf) {
+    HarryJNI.byte_array_input_method(buf);
+  }
+
 }
