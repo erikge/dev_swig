@@ -25,7 +25,6 @@
 	$1 = $input;
 %}
 
-
 // pass byte[] from Java to Cpp
 %apply (char *STRING, int LENGTH) { (char *buf, int buf_len) };
 // return byte[] from Cpp to Java
