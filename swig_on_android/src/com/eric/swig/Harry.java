@@ -35,4 +35,8 @@ public class Harry {
     HarryJNI.byte_array_input_method(buf);
   }
 
+  public static void input_output_para(int[] para_inout, int[] para_out) {
+    HarryJNI.input_output_para(para_inout, para_out);
+  }
+
 }

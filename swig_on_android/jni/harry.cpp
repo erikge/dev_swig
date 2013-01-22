@@ -39,3 +39,9 @@ void byte_array_input_method(char *buf, int buf_len){
         __android_log_print( ANDROID_LOG_DEBUG, "erik", "~~~~~~~~ buf[%d] = %d", i, buf[i]);
     }
 }
+
+void input_output_para(int *para_inout, int *para_out) {
+    int temp = *para_inout;
+    *para_inout = *para_out; // output para does not pass in value. Its initial value is always 0
+    *para_out = temp;
+}

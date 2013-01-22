@@ -44,7 +44,7 @@ signed char* byte_array_method(signed char arr[]);
 //void *test_void_ptr(void *ptr);
 void * void_ptr_method(void * object); // Hope void * object --> Object in Java
 void byte_array_input_method(char *buf, int buf_len);
-
+void input_output_para(int *para_inout, int *para_out);
 
 /******************************************************************
  * Data Type Demo

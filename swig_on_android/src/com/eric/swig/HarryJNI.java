@@ -25,6 +25,7 @@ public class HarryJNI {
   public final static native long byte_array_method(long jarg1);
   public final static native long void_ptr_method(Object jarg1);
   public final static native void byte_array_input_method(byte[] jarg1);
+  public final static native void input_output_para(int[] jarg1, int[] jarg2);
   public final static native int NET_UDP_get();
   public final static native int NET_TCP_get();
   public final static native void DefStruct_value_int_set(long jarg1, DefStruct jarg1_, int jarg2);

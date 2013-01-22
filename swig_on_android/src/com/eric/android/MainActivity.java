@@ -41,6 +41,12 @@ public class MainActivity extends Activity {
 		
 		byte[] array = new byte[] {1, 2, 3, 4};
 		Harry.byte_array_input_method(array);
+		
+		int[] paraInout = new int[] {7};
+		int[] paraOut = new int[] {2};
+		Harry.input_output_para(paraInout, paraOut);
+		System.out.println("[input_output_para] inout("+paraInout[0]+") out("+paraOut[0]+")");
+		
 	}
 
 }

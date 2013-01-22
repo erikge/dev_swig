@@ -28,6 +28,11 @@
 // pass byte[] from Java to Cpp
 %apply (char *STRING, int LENGTH) { (char *buf, int buf_len) };
 // return byte[] from Cpp to Java
+// TODO
+
+// input and output parameters
+%apply int *INOUT { int *para_inout };
+%apply int *OUTPUT { int *para_out }; // output para does not pass in value. Its initial value is always 0
 
 %include "harry.h"
 

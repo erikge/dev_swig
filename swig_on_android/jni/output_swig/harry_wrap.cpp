@@ -787,6 +787,49 @@ SWIGEXPORT void JNICALL Java_com_eric_swig_HarryJNI_byte_1array_1input_1method(J
 }
 
 
+SWIGEXPORT void JNICALL Java_com_eric_swig_HarryJNI_input_1output_1para(JNIEnv *jenv, jclass jcls, jintArray jarg1, jintArray jarg2) {
+  int *arg1 = (int *) 0 ;
+  int *arg2 = (int *) 0 ;
+  int temp2 ;
+  
+  (void)jenv;
+  (void)jcls;
+  {
+    if (!jarg1) {
+      SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "array null");
+      return ;
+    }
+    if (jenv->GetArrayLength(jarg1) == 0) {
+      SWIG_JavaThrowException(jenv, SWIG_JavaIndexOutOfBoundsException, "Array must contain at least 1 element");
+      return ;
+    }
+    arg1 = (int *) jenv->GetIntArrayElements(jarg1, 0); 
+  }
+  {
+    if (!jarg2) {
+      SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "array null");
+      return ;
+    }
+    if (jenv->GetArrayLength(jarg2) == 0) {
+      SWIG_JavaThrowException(jenv, SWIG_JavaIndexOutOfBoundsException, "Array must contain at least 1 element");
+      return ;
+    }
+    temp2 = (int)0;
+    arg2 = &temp2; 
+  }
+  input_output_para(arg1,arg2);
+  {
+    jenv->ReleaseIntArrayElements(jarg1, (jint *)arg1, 0); 
+  }
+  {
+    jint jvalue = (jint)temp2;
+    jenv->SetIntArrayRegion(jarg2, 0, 1, &jvalue);
+  }
+  
+  
+}
+
+
 SWIGEXPORT jint JNICALL Java_com_eric_swig_HarryJNI_NET_1UDP_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   NetType result;
